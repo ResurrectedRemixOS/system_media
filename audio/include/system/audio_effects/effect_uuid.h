@@ -77,6 +77,8 @@ inline const char* const& kEffectTypeUuidVisualizer =
     Descriptor::EFFECT_TYPE_UUID_VISUALIZER;
 inline const char* const& kEffectTypeUuidVolume =
     Descriptor::EFFECT_TYPE_UUID_VOLUME;
+constexpr char kEffectTypeUuidAxionFx[] = "5867be72-4060-4c55-a378-c1cdef3e1353";
+constexpr char kEffectTypeUuidDolbyDap[] = "46d279d9-9be7-453d-9d7c-ef937f675587";
 
 constexpr char kEffectImplUuidAcousticEchoCancelerSw[] = "bb392ec0-8d4d-11e0-a896-0002a5d5c51b";
 constexpr char kEffectImplUuidAutomaticGainControlV1Sw[] = "aa8130e0-66fc-11e0-bad0-0002a5d5c51b";
@@ -113,6 +115,8 @@ constexpr char kEffectImplUuidVisualizerProxy[] = "1d0a1a53-7d5d-48f2-8e71-27fbd
 constexpr char kEffectImplUuidVolumeSw[] = "fa81a718-588b-11ed-9b6a-0242ac120002";
 constexpr char kEffectImplUuidVolumeBundle[] = "119341a0-8469-11df-81f9-0002a5d5c51b";
 constexpr char kEffectImplUuidSpatializerSw[] = "fa81a880-588b-11ed-9b6a-0242ac120002";
+constexpr char kEffectImplUuidAxionFx[] = "f35cb927-a887-4f3d-847f-770634486d53";
+constexpr char kEffectImplUuidDolbyDap[] = "9d4921da-8225-4f29-aefa-39537a04bcaa";
 
 
 constexpr char kEffectUuidNull[] = "ec7178ec-e5e1-4432-a3f4-4657e6795210";
@@ -138,7 +142,9 @@ constexpr char kEffectImplUuidExtension[] = "fa81dd00-588b-11ed-9b6a-0242ac12000
     V(TypeUuidSpatializer)            \
     V(TypeUuidVirtualizer)            \
     V(TypeUuidVisualizer)             \
-    V(TypeUuidVolume)
+    V(TypeUuidVolume)                 \
+    V(TypeUuidAxionFx)                \
+    V(TypeUuidDolbyDap)
 
 #define EFFECT_IMPL_UUID_LIST_DEF(V)    \
     V(ImplUuidAcousticEchoCancelerSw)   \
@@ -176,7 +182,9 @@ constexpr char kEffectImplUuidExtension[] = "fa81dd00-588b-11ed-9b6a-0242ac12000
     V(ImplUuidVisualizerProxy)          \
     V(ImplUuidVolumeSw)                 \
     V(ImplUuidVolumeBundle)             \
-    V(ImplUuidSpatializerSw)
+    V(ImplUuidSpatializerSw)            \
+    V(ImplUuidAxionFx)                  \
+    V(ImplUuidDolbyDap)
 
 #define EFFECT_OTHER_UUID_LIST_DEF(V) \
     V(UuidNull)                           \
